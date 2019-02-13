@@ -1,0 +1,14 @@
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/CMakeFiles/rebuild_cache.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/CMakeFiles/edit_cache.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/CMakeFiles/WebServer.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/CMakeFiles/rebuild_cache.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/CMakeFiles/edit_cache.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/CMakeFiles/libserver_base.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/CMakeFiles/rebuild_cache.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/CMakeFiles/edit_cache.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/CMakeFiles/LoggingTest.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/CMakeFiles/rebuild_cache.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/CMakeFiles/edit_cache.dir
+/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/CMakeFiles/HTTPClient.dir

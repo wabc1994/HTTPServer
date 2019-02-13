@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="WebServer"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\WebServer\;CMake Files\WebServer\base\;CMake Files\WebServer\base\tests\;CMake Files\WebServer\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="WebServer">
+				<Option output="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/WebServer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/coderlau/IdeaProjects/WebServer-master/base"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/Makefile&quot;  VERBOSE=1 WebServer"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="WebServer/fast">
+				<Option output="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/WebServer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/coderlau/IdeaProjects/WebServer-master/base"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/Makefile&quot;  VERBOSE=1 WebServer/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libserver_base">
+				<Option output="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/libserver_base.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/coderlau/IdeaProjects/WebServer-master/base"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/Makefile&quot;  VERBOSE=1 libserver_base"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libserver_base/fast">
+				<Option output="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/libserver_base.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/coderlau/IdeaProjects/WebServer-master/base"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/Makefile&quot;  VERBOSE=1 libserver_base/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LoggingTest">
+				<Option output="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/LoggingTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/coderlau/IdeaProjects/WebServer-master/base"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/Makefile&quot;  VERBOSE=1 LoggingTest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LoggingTest/fast">
+				<Option output="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/LoggingTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/coderlau/IdeaProjects/WebServer-master/base"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/Makefile&quot;  VERBOSE=1 LoggingTest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HTTPClient">
+				<Option output="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/HTTPClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/coderlau/IdeaProjects/WebServer-master/base"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/Makefile&quot;  VERBOSE=1 HTTPClient"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HTTPClient/fast">
+				<Option output="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/HTTPClient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/coderlau/IdeaProjects/WebServer-master/base"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/Makefile&quot;  VERBOSE=1 HTTPClient/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/WebServer/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/Channel.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/Channel.h">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/Epoll.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/Epoll.h">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/EventLoop.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/EventLoop.h">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/EventLoopThread.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/EventLoopThread.h">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/EventLoopThreadPool.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/EventLoopThreadPool.h">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/HttpData.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/HttpData.h">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/Main.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/Server.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/Server.h">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/Timer.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/Timer.h">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/Util.cpp">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/Util.h">
+			<Option target="WebServer"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/AsyncLogging.cpp">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/AsyncLogging.h">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/CountDownLatch.cpp">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/CountDownLatch.h">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/FileUtil.cpp">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/FileUtil.h">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/LogFile.cpp">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/LogFile.h">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/LogStream.cpp">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/LogStream.h">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/Logging.cpp">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/Logging.h">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/Thread.cpp">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/Thread.h">
+			<Option target="libserver_base"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/tests/LoggingTest.cpp">
+			<Option target="LoggingTest"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/tests/HTTPClient.cpp">
+			<Option target="HTTPClient"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\WebServer\"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\WebServer\base\"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/base/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\WebServer\base\tests\"/>
+		</Unit>
+		<Unit filename="/Users/coderlau/IdeaProjects/WebServer-master/WebServer/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\WebServer\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

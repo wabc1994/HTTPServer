@@ -1,0 +1,1 @@
+g++  -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/HTTPClient.dir/HTTPClient.cpp.o  -o HTTPClient 
