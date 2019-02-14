@@ -9,9 +9,9 @@
 
 
 AsyncLogging::AsyncLogging(std::string logFileName_,int flushInterval)
-  : flushInterval_(flushInterval),
+  : flushInterval_(flushInterval), // 过多久就将缓冲区当中的文件flush到磁盘
     running_(false),
-    basename_(logFileName_),
+    basename_(logFileName_),    //日志名字
     // 线程函数
     thread_(std::bind(&AsyncLogging::threadFunc, this), "Logging"),
     mutex_(),
@@ -32,6 +32,14 @@ AsyncLogging::AsyncLogging(std::string logFileName_,int flushInterval)
 
 
 //所有LOG_*最终都会调用append函数  , 前台I/O线程调用，往buffer当中写入日志消息
+
+//Description :
+//前端在生成一条日志消息时，会调用AsyncLogging::append()。
+//如果currentBuffer_够用，就把日志内容写入到currentBuffer_中，
+//如果不够用(就认为其满了)，就把currentBuffer_放到已满buffer数组中，
+//等待消费者线程（即后台线程）来取。则将预备好的另一块缓冲
+//（nextBuffer_）移用为当前缓冲区（currentBuffer_）。
+
 void AsyncLogging::append(const char* logline, int len)
 {
     MutexLockGuard lock(mutex_);
@@ -48,15 +56,20 @@ void AsyncLogging::append(const char* logline, int len)
         else
             //如果前端写入速度太快了，一下子把两块缓冲都用完了，那么只好分配一块新的buffer,作当前缓冲，这是极少发生的情况 新建一个缓存区
             currentBuffer_.reset(new Buffer);
+        // 添加日志记录。
         currentBuffer_->append(logline, len);
 
         // 通知日志线程，有数据可写 ，调用threadFunc
         // 也就是说，只有当缓冲区满了之后才会将数据写入日志文件中，
+        // 通知后端开始写入日志数据。
         cond_.notify();
     }
 }
 
 // 日志线程从缓冲区当中读取数据，往磁盘文件当中写入数据
+
+
+// 倒时计数器，和条件变量，锁机制来实现线程之间的基本同步消息
 void AsyncLogging::threadFunc()
 {
     assert(running_ == true);
@@ -82,14 +95,16 @@ void AsyncLogging::threadFunc()
             // 如果buffer为空，那么表示没有数据需要写入文件，那么就等待指定的时间（注意这里没有用倒数计数器）
             if (buffers_.empty())  // unusual usage!
             {
-                // 条件变量进行等待
+                // 条件变量进行等待  // 如果buffers_为空，那么表示没有数据需要写入文件，那么就等待指定的时间。
                 cond_.waitForSeconds(flushInterval_);
             }
 
             buffers_.push_back(currentBuffer_);
+            // 重新值
             currentBuffer_.reset();
 
             currentBuffer_ = std::move(newBuffer1);
+            // buffersToWrite 是后台日志部分使用的，而buffers_前台程序使用的基本情况
             buffersToWrite.swap(buffers_);
             if (!nextBuffer_)
             {
@@ -115,6 +130,8 @@ void AsyncLogging::threadFunc()
             //          buffersToWrite.size()-2);
             //fputs(buf, stderr);
             //output.append(buf, static_cast<int>(strlen(buf)));
+            //  // 丢掉多余日志，以腾出内存，仅保留两块缓冲区
+            // 仅仅保留两个缓冲区，第一块和第二块缓冲区，0和1的大小关系
             buffersToWrite.erase(buffersToWrite.begin()+2, buffersToWrite.end());
         }
 

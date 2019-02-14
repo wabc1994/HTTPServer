@@ -51,11 +51,11 @@ private:
 
     bool running_;      //
     std::string basename_;
-    Thread thread_;
+    Thread thread_;   // 执行该异步日志记录器的线程
     MutexLock mutex_;
     Condition cond_;
     BufferPtr currentBuffer_;   //采用双缓冲区的功能  // 当前的缓冲区
     BufferPtr nextBuffer_;       // 预备缓存区
-    BufferVector buffers_;    // 缓冲区队列，待写入文件
-    CountDownLatch latch_;
+    BufferVector buffers_;    // 缓冲区队列，待写入文件，所以可以写入的都放在这里面
+    CountDownLatch latch_;      // 倒计时计数器初始化为1，用于指示什么时候日志记录器才能开始正常工作
 };
