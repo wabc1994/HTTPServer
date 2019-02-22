@@ -148,6 +148,7 @@ HttpData::HttpData(EventLoop *loop, int connfd):
     channel_->setConnHandler(bind(&HttpData::handleConn, this));
 }
 
+
 void HttpData::reset()
 {
     //inBuffer_.clear();
@@ -183,6 +184,7 @@ void HttpData::handleRead()
     do
     {
         bool zero = false;
+        // 客户端发送的数据放在inBuffer 当中
         int read_num = readn(fd_, inBuffer_, zero);
         LOG << "Request: " << inBuffer_;
         //如果客服端发送过来的请求显示为
@@ -228,6 +230,7 @@ void HttpData::handleRead()
             else if (flag == PARSE_URI_ERROR)
             {
                 perror("2");
+                // 究竟是哪一个fd 上面到来的基础数据
                 LOG << "FD = " << fd_ << "," << inBuffer_ << "******";
                 inBuffer_.clear();
                 error_ = true;
@@ -495,7 +498,7 @@ URIState HttpData::parseURI()
 // http请求解析协议，解析请求头 request header
 HeaderState HttpData::parseHeaders()
 {
-    string &str = inBuffer_;
+    string &str = inBuffer_; // 请求数据放在inBuffer
     int key_start = -1, key_end = -1, value_start = -1, value_end = -1;
     int now_read_line_begin = 0;
     bool notFinish = true;

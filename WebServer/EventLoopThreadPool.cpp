@@ -26,6 +26,7 @@ void EventLoopThreadPool::start()
     started_ = true;
     for (int i = 0; i < numThreads_; ++i)
     {
+        // 线程池当中的每一个I/O线程都是使用share_ptr进行封装的
         std::shared_ptr<EventLoopThread> t(new EventLoopThread());
         // 放进入线程的vector
         threads_.push_back(t);
@@ -39,7 +40,7 @@ void EventLoopThreadPool::start()
 //这里面就是mainEventLoop 和subEventLoop 之间如何进行任务分配的， 主要采用的是轮旋算法
 EventLoop *EventLoopThreadPool::getNextLoop()
 {
-    baseLoop_->assertInLoopThread();
+    baseLoop_->assertInLoopThread();  //
     // 确保第一个
     assert(started_);
     EventLoop *loop = baseLoop_;   // 关于这里面为何要设置成为baseLoop，主要是如果vector<EventLoop>为空的话，即使服务器当中没有SubReactor的话

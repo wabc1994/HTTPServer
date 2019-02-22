@@ -51,6 +51,9 @@ int main(int argc, char *argv[])
     // 主线程是刚开始就要自己创建，
     Server myHTTPServer(&mainLoop, threadNum, port);
     myHTTPServer.start();
+
+    // 子反应器的线程启动必须的条件必须是主反应器已经启动好，并且已经在运行当中了， mainLoop.loop()
+    // 该种情况
     mainLoop.loop();
     return 0;
 }

@@ -51,6 +51,8 @@ bool TimerNode::isValid()
     gettimeofday(&now, NULL);
     size_t temp = (((now.tv_sec % 10000) * 1000) + (now.tv_usec / 1000));
   // isValid 代表
+
+  // 时间都是采用一一个
     if (temp < expiredTime_)
         return true;
     else
@@ -103,12 +105,17 @@ void TimerManager::addTimer(std::shared_ptr<HttpData> SPHttpData, int timeout)
 void TimerManager::handleExpiredEvent()
 {
     //MutexLockGuard locker(lock);
+
+    // 不断从堆定取出元素进行判断，如果堆顶元素不超时了，那么整个堆当中的连接都是不超时的
+    // 所以在这里面我们不应该理解为每次只判断一个请求是否超时，而是有可能多个
+    // 处理一个请求超时，然后将下一个元素
     while (!timerNodeQueue.empty())
     {
         SPTimerNode ptimer_now = timerNodeQueue.top();
         // 什么情况下设置为isDeleted，
         if (ptimer_now->isDeleted())
             timerNodeQueue.pop();
+        // 超过了过期时间，
         else if (ptimer_now->isValid() == false)
             timerNodeQueue.pop();
         else

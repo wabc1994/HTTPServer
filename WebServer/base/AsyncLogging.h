@@ -47,13 +47,13 @@ private:
     typedef FixedBuffer<kLargeBuffer> Buffer;
     typedef std::vector<std::shared_ptr<Buffer>> BufferVector;
     typedef std::shared_ptr<Buffer> BufferPtr;
-    const int flushInterval_;   // 超时时间，在flushInterval_秒内，缓冲区没写满，仍将缓冲区的数据写到文件中
+    const int flushInterval_;   // 超时时间，在flushInterval_秒内，缓冲区没写满，仍将缓冲区的数据写到文件中, 写缓冲区当中的文件flush 到磁盘当中
 
     bool running_;      //
     std::string basename_;
     Thread thread_;   // 执行该异步日志记录器的线程
     MutexLock mutex_;
-    Condition cond_;
+    Condition cond_;   // 条件变量的基本情况
     BufferPtr currentBuffer_;   //采用双缓冲区的功能  // 当前的缓冲区
     BufferPtr nextBuffer_;       // 预备缓存区
     BufferVector buffers_;    // 缓冲区队列，待写入文件，所以可以写入的都放在这里面

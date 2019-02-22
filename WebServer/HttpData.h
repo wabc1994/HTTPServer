@@ -14,6 +14,7 @@ class EventLoop;
 class TimerNode;
 class Channel;
 
+// 处理过程
 enum ProcessState
 {
     STATE_PARSE_URI = 1,
@@ -92,6 +93,7 @@ private:
     static pthread_once_t once_control;
 };
 
+// httpData 代表一个客户端请求， 在这俩面我们要进行封装，为他分配一个fd Eventloop，channel,timer 定时器谁来处理这个请求 哪个I/O线程， 定时器该设置为多少的基本情况
 //
 
 class HttpData: public std::enable_shared_from_this<HttpData>
@@ -137,7 +139,7 @@ private:
     std::weak_ptr<TimerNode> timer_;    // 每个请求关联一个过期时间，过期时间为何采用weak_ptr 指针来表示
 
     void handleRead();    // 处理read
-    void handleWrite();   // 处理写操作
+    void handleWrite();   // 处理写操作w
     void handleConn();      // 请求连接 TCP连接
     void handleError(int fd, int err_num, std::string short_msg);
     URIState parseURI();

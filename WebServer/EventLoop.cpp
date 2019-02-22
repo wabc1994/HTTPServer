@@ -18,6 +18,7 @@ __thread EventLoop* t_loopInThisThread = 0;
 
 
 //[Muduo网络库源码分析（三）线程间使用eventfd通信和EventLoop::runInLoop系列函数](https://blog.csdn.net/NK_test/article/details/51138359)
+
 int createEventfd()
 {
 
@@ -97,6 +98,7 @@ void EventLoop::wakeup()
 }
 
 
+//这里面的handleRead() 不是正常的I/O处理，部分，跟Channel和Httpdata 的handleRead是不一样的
 
 void EventLoop::handleRead()
 {
@@ -169,6 +171,7 @@ void EventLoop::loop()
         ret.clear();
 
         // 采用一个vector来保存准备就绪事件的情况
+        // 这里面试可能能阻塞select, epoll等是阻塞的，
         ret = poller_->poll();
         eventHandling_ = true;
         // 调用处理函数, m
@@ -180,7 +183,7 @@ void EventLoop::loop()
         //    // 这种设计使得IO线程也能执行一些计算任务，避免了IO线程在不忙时长期阻塞在IO multiplexing调用中
         doPendingFunctors();   // 非I/O 任务  // 正在调用计算函数   // 为了让IO线程也能执行一些计算任务 合理利用CPU
       // 一个I/O
-        // 最后处理过期事件
+        // 最后处理过期事件， 在时间循环
         poller_->handleExpired();
     }
     looping_ = false;

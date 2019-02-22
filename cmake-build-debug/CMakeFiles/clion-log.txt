@@ -1,11 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/coderlau/IdeaProjects/WebServer-master
--- The CXX compiler identification is AppleClang 10.0.0.10001044
--- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++
--- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- CXX_FLAGS = -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0
 -- Configuring done
 -- Generating done

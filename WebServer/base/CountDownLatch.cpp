@@ -9,6 +9,10 @@
 // count_ 计数器
 
 // mutex 锁
+
+// 三个东西，一个是锁， 一个是count 变量， 另一个是条件变量，用于线程的通知机制，条件变量当中的wait()和 notifyAll()函数级别
+
+
 CountDownLatch::CountDownLatch(int count)
   : mutex_(),
     condition_(mutex_),

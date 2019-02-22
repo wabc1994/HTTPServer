@@ -136,9 +136,11 @@ void requestData::seperateTimer()
 void requestData::handleRequest()
 {
     char buff[MAX_BUFF];
+    //从客户端请求到的数据是写到buff当中的基本情况
     bool isError = false;
     while (true)
     {
+        // 将fd 上面的数据读取然后放到buff 当中去
         int read_num = readn(fd, buff, MAX_BUFF);
         if (read_num < 0)
         {
@@ -161,6 +163,7 @@ void requestData::handleRequest()
                 isError = true;
             break;
         }
+        //读取成功的情况, 存放在buff, 那么现在的功能就是讲buff当中的内容取出来即可
         string now_read(buff, buff + read_num);
         content += now_read;
 
@@ -204,7 +207,7 @@ void requestData::handleRequest()
         {
             int content_length = -1;
             if (headers.find("Content-length") != headers.end())
-            {
+                {
                 content_length = stoi(headers["Content-length"]);
             }
             else

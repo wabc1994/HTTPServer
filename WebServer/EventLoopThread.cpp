@@ -39,7 +39,7 @@ EventLoop* EventLoopThread::startLoop()
 }
 
 
-// 线程函数
+// 线程函数  释放线程池所申请的内存资源。
 void EventLoopThread::threadFunc()
 {
     EventLoop loop;

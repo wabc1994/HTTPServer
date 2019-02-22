@@ -3,12 +3,20 @@
 #include <string>
 #include <unordered_map>
 
+// Http状态解析机
+// 主要是分为五种情况
+
+// 服务器端读取到socket缓冲区当中的数据的时候， 读取完一个请求后，
+// 就开始解析， 如果解析的， 就是使用状态解析机来完成这个功能即可，
+
 const int STATE_PARSE_URI = 1;
 const int STATE_PARSE_HEADERS = 2;
 const int STATE_RECV_BODY = 3;
 const int STATE_ANALYSIS = 4;
 const int STATE_FINISH = 5;
 
+
+// 存放从客户端来的情况
 const int MAX_BUFF = 4096;
 
 // 有请求出现但是读不到数据,可能是Request Aborted,

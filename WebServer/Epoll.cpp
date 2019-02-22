@@ -38,7 +38,7 @@ void Epoll::epoll_add(SP_Channel request, int timeout)
     // 获取通道上面的文件描述符等情况 ,每个fd 代表一个客户端的请求， 所以我们使用requset 进行代表，
     int fd = request->getFd();
     // 查看相应的过期时间设置是否正确等情况
-    if (timeout > 0)
+    if (timeout > 0)  // 默认是0
     {
         //  往堆当中添加一个定时器， key, request ---timeout   一个httpdata 就是代表一个用户请求
         // void addTimer(std::shared_ptr<HttpData> SPHttpData, int timeout);
@@ -114,6 +114,8 @@ std::vector<SP_Channel> Epoll::poll()
     }
 }
 
+
+// 处理过期事件，
 void Epoll::handleExpired()
 {
     // 处理过期事件handle

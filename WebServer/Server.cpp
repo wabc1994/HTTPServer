@@ -57,7 +57,7 @@ void Server::handNewConn()
     memset(&client_addr, 0, sizeof(struct sockaddr_in));
     socklen_t client_addr_len = sizeof(client_addr);
     int accept_fd = 0;
-    // 处理新的连接 ，
+    // 处理新的连接
     while((accept_fd = accept(listenFd_, (struct sockaddr*)&client_addr, &client_addr_len)) > 0)
     {
         // 新来的连接采用线程池的方式进行处理
@@ -86,7 +86,7 @@ void Server::handNewConn()
             //perror("Set non block failed!");
             return;
         }
-
+  //
         setSocketNodelay(accept_fd);
         //setSocketNoLinger(accept_fd);
          // 对客户端的请求进行一个
@@ -94,5 +94,6 @@ void Server::handNewConn()
         req_info->getChannel()->setHolder(req_info);
         loop->queueInLoop(std::bind(&HttpData::newEvent, req_info));
     }
+    // 事件监听
     acceptChannel_->setEvents(EPOLLIN | EPOLLET);
 }

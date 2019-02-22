@@ -11,6 +11,28 @@
 #include <netinet/tcp.h>
 
 const int MAX_BUFF = 4096;
+
+//1.小于0，出错
+
+//2.等于0，对方关闭
+
+//3.大于0，但是小于count，对方关闭，只有
+
+//4.count，代表读满count个字节
+
+
+
+
+//当剩余长度大于0的时候就一直读啊读
+//
+//   1. 当read的返回值小于0的时候，做异常检测
+//  2. 当read的返回值等于0的时候，退出循环
+//  3. 当read的返回值大于0的时候，拿剩余长度减read的返回值，拿到新的剩余长度，读的入口指针加上read的返回值，进入步骤1
+//  4. 返回参数n减去剩余长度，即实际读取的总长度
+
+
+
+//readn在未出错或者fd没有关闭的情况下，会读满count个字节。
 ssize_t readn(int fd, void *buff, size_t n)
 {
     size_t nleft = n;
@@ -115,6 +137,15 @@ ssize_t readn(int fd, std::string &inBuffer)
     return readSum;
 }
 
+// 要么读取n 字节的数据，要么读取失败，只有两种可能性， 要么读取成功，要么读取失败，本质也是通过循环
+
+
+
+//当要写入的剩余长度大于0的时候就一直写啊写
+  //      当write的返回值小于0的时候，做异常检测
+    //    当write的返回值等于0的时候，出错退出程序
+      //  当write的返回值大于0的时候，拿剩余长度减去write的返回值，拿到新的剩余长度，写的入口指针加上write的返回值，进入步骤1
+        //返回参数n的值，即期望写入的总长度
 
 ssize_t writen(int fd, void *buff, size_t n)
 {
