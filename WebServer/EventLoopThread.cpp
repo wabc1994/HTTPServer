@@ -45,7 +45,7 @@ void EventLoopThread::threadFunc()
     EventLoop loop;
     // I/O线程的关键
 
-   // 任何一个线程，只要创建并运行了EventLoop，都称之为IO线程
+      // 任何一个线程，只要创建并运行了EventLoop，都称之为IO线程
 
     // 确保I/0线程里面使用的EventLoop 是在本地线程创建的
 

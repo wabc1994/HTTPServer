@@ -1,5 +1,4 @@
-// @Author Lin Ya
-// @Email xxbbb@vip.qq.com
+
 #include "CountDownLatch.h"
 
 
@@ -10,7 +9,7 @@
 
 // mutex 锁
 
-// 三个东西，一个是锁， 一个是count 变量， 另一个是条件变量，用于线程的通知机制，条件变量当中的wait()和 notifyAll()函数级别
+// 三个东西，一一个是锁， 个是count 变量， 另一个是条件变量，用于线程的通知机制，条件变量当中的wait()和 notifyAll()函数级别
 
 
 CountDownLatch::CountDownLatch(int count)
@@ -23,6 +22,7 @@ CountDownLatch::CountDownLatch(int count)
 
 void CountDownLatch::wait()
 {
+
     MutexLockGuard lock(mutex_);
     while (count_ > 0)
         condition_.wait();

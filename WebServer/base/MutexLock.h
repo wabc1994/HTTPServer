@@ -1,15 +1,15 @@
-// @Author Lin Ya
-// @Email xxbbb@vip.qq.com
 #pragma once
 #include "noncopyable.h"
 #include <pthread.h>
 #include <cstdio>
 
 
-// 自定义RAII C++实现范围互斥锁 , 主要有两个地方使用了RAII方法， 对pthread_mutex_t 进行一个封装成为mutex 和一个条件变量
-// 其中构造函数当中调用pthread_mutex_init
+// 自定义RAII C++实现范围互斥锁 , 主要有两个地方使用了RAII方法， 对pthread_mutex_t mutex进行一个封装成为mutex 和一个条件变量
+// 其中构造函数当中调用pthread_mutex_init,在析构函数当中调用pthread_mutex_destroy()
 // 在析构函数当中
 
+
+// 这样定义定义之后，
 
 //https://blog.csdn.net/liuxuejiang158blog/article/details/10953305
 class MutexLock: noncopyable

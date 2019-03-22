@@ -67,9 +67,15 @@ void Server::handNewConn()
         // cout << inet_ntoa(client_addr.sin_addr) << endl;
         // cout << ntohs(client_addr.sin_port) << endl;
         /*
-        // TCP的保活机制默认是关闭的
+        // TCP的保活机制默认是关闭的，在该种情况下面
+
+
+         //[TCP保活机制 - superLi - CSDN博客](https://blog.csdn.net/s_lisheng/article/details/87288445)
+
+
         int optval = 0;
         socklen_t len_optval = 4;
+         // 下面这句话就可以保持TCP的保活机制
         getsockopt(accept_fd, SOL_SOCKET,  SO_KEEPALIVE, &optval, &len_optval);
         cout << "optval ==" << optval << endl;
         */

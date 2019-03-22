@@ -1,5 +1,3 @@
-// @Author Lin Ya
-// @Email xxbbb@vip.qq.com
 #include "Channel.h"
 #include "Util.h"
 #include "Epoll.h"

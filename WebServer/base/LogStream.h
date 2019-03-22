@@ -1,5 +1,3 @@
-// @Author Lin Ya
-// @Email xxbbb@vip.qq.com
 #pragma once
 #include "noncopyable.h"
 #include <assert.h>
@@ -48,7 +46,7 @@ private:
     const char* end() const { return data_ + sizeof data_; }
 
     char data_[SIZE];   // 字符数组
-    char* cur_;   // 当前的缓存区已有数据大小
+    char* cur_;   // 当前的缓存区已有数据大小，curd 代表已经存在的基本情况
 };
 
 
@@ -120,7 +118,7 @@ private:
     template<typename T>
     void formatInteger(T);
 
-    /* 用于存储日志信息的缓冲区 */
+    /* 用于存储日志信息的缓冲区，缓存该种可能性 */
     Buffer buffer_;
 
     static const int kMaxNumericSize = 32;

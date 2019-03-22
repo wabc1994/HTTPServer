@@ -1,5 +1,4 @@
-// @Author Lin Ya
-// @Email xxbbb@vip.qq.com
+
 #include "Epoll.h"
 #include "Util.h"
 #include "base/Logging.h"
@@ -158,3 +157,4 @@ void Epoll::add_timer(SP_Channel request_data, int timeout)
     else
         LOG << "timer add fail";
 }
+

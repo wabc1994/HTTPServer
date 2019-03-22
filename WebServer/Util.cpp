@@ -1,5 +1,4 @@
-// @Author Lin Ya
-// @Email xxbbb@vip.qq.com
+
 #include "Util.h"
 #include <unistd.h>
 #include <fcntl.h>
@@ -43,6 +42,7 @@ ssize_t readn(int fd, void *buff, size_t n)
     {
         if ((nread = read(fd, ptr, nleft)) < 0)
         {
+            // 如果是EINTER判断错误返回码
             if (errno == EINTR)
                 nread = 0;
             else if (errno == EAGAIN)
@@ -54,6 +54,7 @@ ssize_t readn(int fd, void *buff, size_t n)
                 return -1;
             }  
         }
+        // 判断对方已经关闭了连接
         else if (nread == 0)
             break;
         readSum += nread;
@@ -72,6 +73,7 @@ ssize_t readn(int fd, std::string &inBuffer, bool &zero)
         char buff[MAX_BUFF];
         if ((nread = read(fd, buff, MAX_BUFF)) < 0)
         {
+            // 判断读取了多少，如果是nread<0  进一步判断错误返回码，EINTR代表被中断的系统调用
             if (errno == EINTR)
                 continue;
             else if (errno == EAGAIN)
@@ -88,6 +90,7 @@ ssize_t readn(int fd, std::string &inBuffer, bool &zero)
         {
             //printf("redsum = %d\n", readSum);
             zero = true;
+            // 本次读取数据已经结束
             break;
         }
         //printf("before inBuffer.size() = %d\n", inBuffer.size());
@@ -101,6 +104,12 @@ ssize_t readn(int fd, std::string &inBuffer, bool &zero)
 }
 
 
+// 主要是处理两种错误码的情况
+
+//一种是EINTE
+
+
+//#define EINTR            4      /* Interrupted system call */
 ssize_t readn(int fd, std::string &inBuffer)
 {
     ssize_t nread = 0;
@@ -110,6 +119,7 @@ ssize_t readn(int fd, std::string &inBuffer)
         char buff[MAX_BUFF];
         if ((nread = read(fd, buff, MAX_BUFF)) < 0)
         {
+            //由于信号中断，没读到任何数据,这里面主要是借鉴unp 的思想，直接continue 即可
             if (errno == EINTR)
                 continue;
             else if (errno == EAGAIN)
@@ -159,6 +169,7 @@ ssize_t writen(int fd, void *buff, size_t n)
         {
             if (nwritten < 0)
             {
+
                 if (errno == EINTR)
                 {
                     nwritten = 0;
@@ -167,6 +178,7 @@ ssize_t writen(int fd, void *buff, size_t n)
                 else if (errno == EAGAIN)
                 {
                     return writeSum;
+                    // 代表本次系统调用结束，下次再重新调用，这是两次不同的系统调用了
                 }
                 else
                     return -1;
@@ -196,6 +208,8 @@ ssize_t writen(int fd, std::string &sbuff)
                     nwritten = 0;
                     continue;
                 }
+
+               // 非阻塞socket才会产生EAGAIN的错误，意思是当前不可读写，只要继续重试就好
                 else if (errno == EAGAIN)
                     break;
                 else
@@ -230,6 +244,8 @@ int setSocketNonBlocking(int fd)
         return -1;
 
     flag |= O_NONBLOCK;
+
+    // 设置成为非阻塞式的服务情况
     if(fcntl(fd, F_SETFL, flag) == -1)
         return -1;
     return 0;
@@ -238,6 +254,7 @@ int setSocketNonBlocking(int fd)
 void setSocketNodelay(int fd) 
 {
     int enable = 1;
+    // 设置关闭
     setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, (void*)&enable, sizeof(enable));
 }
 
@@ -249,6 +266,8 @@ void setSocketNoLinger(int fd)
     setsockopt(fd, SOL_SOCKET, SO_LINGER,(const char *) &linger_, sizeof(linger_));
 }
 
+
+// 调用shutDownWR
 void shutDownWR(int fd)
 {
     shutdown(fd, SHUT_WR);
@@ -263,11 +282,24 @@ int socket_bind_listen(int port)
 
     // 创建socket(IPv4 + TCP)，返回监听描述符
     int listen_fd = 0;
+    // AF_INET 代表ipv4协议家族， SOCK_STREAM 代表使用TCP字节流
     if((listen_fd = socket(AF_INET, SOCK_STREAM, 0)) == -1)
         return -1;
 
     // 消除bind时"Address already in use"错误
     int optval = 1;
+
+    // setsockopt() 设置套接字的一些属性情况，SO_REUSEADDR 进入timetou1阶段的可以立即使用该套接字情况
+     // 允许端口重用该种情况、
+
+//
+//    level指定控制套接字的层次.可以取三种值:
+//    1)SOL_SOCKET:通用套接字选项.
+//    2)IPPROTO_IP:IP选项.
+//    3)IPPROTO_TCP:TCP选项.　
+//    optname指定控制的方式(选项的名称),我们下面详细解释　
+
+
     if(setsockopt(listen_fd, SOL_SOCKET,  SO_REUSEADDR, &optval, sizeof(optval)) == -1)
         return -1;
 
@@ -281,12 +313,15 @@ int socket_bind_listen(int port)
         return -1;
 
     // 开始监听，最大等待队列长为LISTENQ
+
+    //关于20148这个参数其实就是backlog accept queue队列的大小情况
     if(listen(listen_fd, 2048) == -1)
         return -1;
 
     // 无效监听描述符
     if(listen_fd == -1)
     {
+        // 服务器端端要关闭一定要关闭高套接字
         close(listen_fd);
         return -1;
     }

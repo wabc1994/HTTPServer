@@ -37,7 +37,7 @@
 * 为减少内存泄漏的可能，使用智能指针等RAII机制
 * 使用状态机解析了HTTP请求,支持管线化
 * 支持优雅关闭连接
-* 使用openssl+ http 实现了https,安全版本https,数据传输
+* 使用openssl + http 实现了https,8安全版本https,数据传输
  
 NIO的主要事件有几个：读就绪、写就绪、有新连接到来。
 

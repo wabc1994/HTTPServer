@@ -1,5 +1,3 @@
-// @Author Lin Ya
-// @Email xxbbb@vip.qq.com
 #include "HttpData.h"
 #include "time.h"
 #include "Channel.h"
@@ -181,10 +179,11 @@ void HttpData::seperateTimer()
 void HttpData::handleRead()
 {
     __uint32_t &events_ = channel_->getEvents();
+  // do _while 循环调用该种情况
     do
     {
         bool zero = false;
-        // 客户端发送的数据放在inBuffer 当中
+        // 客户端发送的数据放在inBuffer 当中，调用系统调用readn函数
         int read_num = readn(fd_, inBuffer_, zero);
         LOG << "Request: " << inBuffer_;
         //如果客服端发送过来的请求显示为
@@ -332,11 +331,6 @@ void HttpData::handleWrite()
     if (!error_ && connectionState_ != H_DISCONNECTED)
     {
         __uint32_t &events_ = channel_->getEvents();
-        if (writen(fd_, outBuffer_) < 0)
-        {
-            perror("writen");
-            events_ = 0;
-            error_ = true;
         }
         if (outBuffer_.size() > 0)
             events_ |= EPOLLOUT;

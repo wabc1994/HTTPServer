@@ -1,5 +1,4 @@
-// @Author Lin Ya
-// @Email xxbbb@vip.qq.com
+
 #include "EventLoopThreadPool.h"
 
 //EventLoopThreadPool（IO线程池)
@@ -26,7 +25,7 @@ void EventLoopThreadPool::start()
     started_ = true;
     for (int i = 0; i < numThreads_; ++i)
     {
-        // 线程池当中的每一个I/O线程都是使用share_ptr进行封装的
+        //线程池当中的每一个I/O线程都是使用share_ptr进行封装的
         std::shared_ptr<EventLoopThread> t(new EventLoopThread());
         // 放进入线程的vector
         threads_.push_back(t);

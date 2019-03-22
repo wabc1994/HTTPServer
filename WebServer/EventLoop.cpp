@@ -1,5 +1,3 @@
-// @Author Lin Ya
-// @Email xxbbb@vip.qq.com
 #include "EventLoop.h"
 #include "base/Logging.h"
 #include "Util.h"
@@ -90,6 +88,7 @@ EventLoop::~EventLoop()
 void EventLoop::wakeup()
 {
     uint64_t one = 1;
+    // eventfd进行唤醒功能
     ssize_t n = writen(wakeupFd_, (char*)(&one), sizeof one);
     if (n != sizeof one)
     {
@@ -98,7 +97,7 @@ void EventLoop::wakeup()
 }
 
 
-//这里面的handleRead() 不是正常的I/O处理，部分，跟Channel和Httpdata 的handleRead是不一样的
+//这里面的handleRead() 不是正常的I/O处理，部分，跟Channel和Httpdata 的handleRead是不一样的，这是线程之间的通信机制
 
 void EventLoop::handleRead()
 {
