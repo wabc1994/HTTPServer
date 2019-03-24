@@ -16,153 +16,109 @@
   <component name="ChangeListManager">
     <list default="true" id="4ea134bd-6123-4686-8d98-dcd22c5069f9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/Epoll.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/Epoll.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/EventLoop.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/EventLoop.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/EventLoopThread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/EventLoopThread.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/EventLoopThread.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/EventLoopThread.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/EventLoopThreadPool.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/EventLoopThreadPool.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/HttpData.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/HttpData.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/HttpData.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/HttpData.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/Server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/Server.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/Server.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/Server.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/Util.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/Util.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/Util.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/Util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/AsyncLogging.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/AsyncLogging.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/AsyncLogging.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/AsyncLogging.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/CountDownLatch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/CountDownLatch.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/CountDownLatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/CountDownLatch.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/CurrentThread.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/CurrentThread.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/FileUtil.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/FileUtil.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/FileUtil.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/FileUtil.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/LogFile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/LogFile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/LogFile.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/LogFile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/LogStream.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/LogStream.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/LogStream.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/LogStream.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/Logging.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/Logging.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/Logging.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/Logging.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/MutexLock.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/MutexLock.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/Thread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/Thread.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/Thread.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/Thread.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/base/noncopyable.h" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/base/noncopyable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/Makefile1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/epoll.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/epoll.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/improvement.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/requestData.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/requestData.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/threadpool.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/threadpool.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/util.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.1/util.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/Makefile1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/epoll.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/epoll.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/improvement.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/requestData.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/requestData.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/threadpool.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/threadpool.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/util.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.2/util.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/Makefile1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/config.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/epoll.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/epoll.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/improvement.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/requestData.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/requestData.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/threadpool.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/threadpool.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/util.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.3/util.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/Makefile1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/base/mutexLock.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/base/nocopyable.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/config.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/epoll.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/epoll.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/improvement.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/requestData.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/requestData.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/threadpool.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/threadpool.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/timer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/timer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/util.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.4/util.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/Makefile1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/base/condition.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/base/mutexLock.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/base/nocopyable.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/config.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/epoll.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/epoll.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/requestData.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/requestData.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/threadpool.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/threadpool.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/timer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/timer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/util.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.5/util.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/AsyncLogging.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/AsyncLogging.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/Condition.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/CountDownLatch.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/CountDownLatch.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/CurrentThread.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/FileUtil.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/FileUtil.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/LogFile.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/LogFile.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/LogStream.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/LogStream.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/Logging.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/Logging.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/Makefile1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/MutexLock.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/Thread.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/Thread.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/config.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/epoll.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/epoll.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/noncopyable.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/requestData.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/requestData.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/threadpool.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/threadpool.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/timer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/timer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/util.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_version/old_version_0.6/util.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/测试及改进.md" beforeDir="false" afterPath="$PROJECT_DIR$/测试及改进.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/连接的维护.md" beforeDir="false" afterPath="$PROJECT_DIR$/连接的维护.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/遇到的困难.md" beforeDir="false" afterPath="$PROJECT_DIR$/遇到的困难.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/面试问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/面试问题.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/O操作的理解.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/bin/webbench" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/debian/changelog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/debian/control" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/debian/copyright" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/debian/dirs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/debian/rules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/man/man1/webbench.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/share/doc/webbench/changelog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/share/doc/webbench/copyright" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/socket.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/tags" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/test.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/webbench" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/webbench.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebBench/webbench.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Channel.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Channel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Epoll.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Epoll.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/EventLoop.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/EventLoop.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/EventLoopThread.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/EventLoopThread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/EventLoopThreadPool.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/EventLoopThreadPool.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/HttpData.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/HttpData.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Makefile.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Server.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Server.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/ThreadPool.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/ThreadPool.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Timer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Timer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Util.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/Util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/AsyncLogging.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/AsyncLogging.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/Condition.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/CountDownLatch.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/CountDownLatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/CurrentThread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/FileUtil.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/FileUtil.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/LogFile.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/LogFile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/LogStream.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/LogStream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/Logging.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/Logging.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/Log的设计.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/MutexLock.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/Thread.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/Thread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/noncopyable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/tests/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/base/tests/LoggingTest.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/HTTPClient.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/build/release/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/build/release/CMakeFiles/2.8.12.2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/build/release/CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/build/release/CMakeFiles/2.8.12.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/build/release/CMakeFiles/2.8.12.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/build/release/CMakeFiles/2.8.12.2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/build/release/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/build/release/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/build/release/CMakeFiles/CMakeError.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/build/release/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/tests/build/release/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datum/ASLOG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datum/IO复用+非阻塞IO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datum/WebServer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datum/WebServerk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datum/cloc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datum/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datum/gdb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datum/idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datum/keepalive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datum/model.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datum/muduo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datum/muduok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/并发模型.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试及改进.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/版本历史.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/连接的维护.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/遇到的困难.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/面试问题.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/项目目的.md" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -175,53 +131,61 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebServer/base/Logging.cpp">
+        <entry file="file://$PROJECT_DIR$/SimpleWebServer/EventLoopThread.h">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebServer/base/Logging.h">
+        <entry file="file://$PROJECT_DIR$/SimpleWebServer/HttpData.cpp">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebServer/base/LogStream.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebServer/base/LogStream.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebServer/base/MutexLock.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebServer/base/noncopyable.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebServer/base/Thread.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebServer/base/Thread.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebServer/base/AsyncLogging.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/SimpleWebServer/HttpData.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebServer/base/AsyncLogging.h">
+        <entry file="file://$PROJECT_DIR$/SimpleWebServer/EventLoopThreadPool.h">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleWebServer/EventLoop.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleWebServer/Epoll.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleWebServer/Epoll.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleWebServer/Channel.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleWebServer/Channel.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleWebServer/tests/HTTPClient.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -232,37 +196,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebServer/ThreadPool.cpp" />
-        <option value="$PROJECT_DIR$/WebServer/Channel.h" />
-        <option value="$PROJECT_DIR$/WebServer/Channel.cpp" />
-        <option value="$PROJECT_DIR$/old_version/old_version_0.6/MutexLock.h" />
-        <option value="$PROJECT_DIR$/WebServer/EventLoopThreadPool.h" />
-        <option value="$PROJECT_DIR$/并发模型.md" />
-        <option value="$PROJECT_DIR$/五种I/O操作的理解.md" />
-        <option value="$PROJECT_DIR$/O操作的理解.md" />
-        <option value="$PROJECT_DIR$/版本历史.md" />
-        <option value="$PROJECT_DIR$/old_version/old_version_0.2/requestData.cpp" />
-        <option value="$PROJECT_DIR$/old_version/old_version_0.2/requestData.h" />
-        <option value="$PROJECT_DIR$/WebServer/base/Log的设计.txt" />
-        <option value="$PROJECT_DIR$/WebServer/Timer.cpp" />
-        <option value="$PROJECT_DIR$/WebServer/Main.cpp" />
-        <option value="$PROJECT_DIR$/项目目的.md" />
-        <option value="$PROJECT_DIR$/WebServer/EventLoop.h" />
-        <option value="$PROJECT_DIR$/WebServer/Epoll.h" />
-        <option value="$PROJECT_DIR$/面试问题.md" />
-        <option value="$PROJECT_DIR$/old_version/old_version_0.1/requestData.h" />
-        <option value="$PROJECT_DIR$/连接的维护.md" />
-        <option value="$PROJECT_DIR$/测试及改进.md" />
-        <option value="$PROJECT_DIR$/WebServer/Server.h" />
-        <option value="$PROJECT_DIR$/WebServer/Server.cpp" />
-        <option value="$PROJECT_DIR$/WebServer/EventLoopThread.cpp" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/遇到的困难.md" />
         <option value="$PROJECT_DIR$/WebServer/Epoll.cpp" />
-        <option value="$PROJECT_DIR$/WebServer/EventLoop.cpp" />
-        <option value="$PROJECT_DIR$/WebServer/EventLoopThreadPool.cpp" />
-        <option value="$PROJECT_DIR$/WebServer/HttpData.cpp" />
-        <option value="$PROJECT_DIR$/WebServer/HttpData.h" />
         <option value="$PROJECT_DIR$/WebServer/Util.cpp" />
         <option value="$PROJECT_DIR$/WebServer/Util.h" />
         <option value="$PROJECT_DIR$/WebServer/EventLoopThread.h" />
@@ -283,15 +217,45 @@
         <option value="$PROJECT_DIR$/WebServer/base/noncopyable.h" />
         <option value="$PROJECT_DIR$/WebServer/base/Thread.cpp" />
         <option value="$PROJECT_DIR$/WebServer/base/Thread.h" />
+        <option value="$PROJECT_DIR$/WebServer/EventLoop.cpp" />
+        <option value="$PROJECT_DIR$/WebServer/EventLoop.h" />
+        <option value="$PROJECT_DIR$/WebServer/Epoll.h" />
+        <option value="$PROJECT_DIR$/WebServer/EventLoopThreadPool.h" />
+        <option value="$PROJECT_DIR$/WebServer/HttpData.cpp" />
+        <option value="$PROJECT_DIR$/WebServer/HttpData.h" />
+        <option value="$PROJECT_DIR$/WebServer/Main.cpp" />
+        <option value="$PROJECT_DIR$/WebServer/Server.h" />
+        <option value="$PROJECT_DIR$/WebServer/Timer.h" />
+        <option value="$PROJECT_DIR$/WebServer/ThreadPool.h" />
+        <option value="$PROJECT_DIR$/WebServer/Timer.cpp" />
+        <option value="$PROJECT_DIR$/WebServer/Channel.h" />
+        <option value="$PROJECT_DIR$/WebServer/Channel.cpp" />
+        <option value="$PROJECT_DIR$/WebServer/EventLoopThreadPool.cpp" />
+        <option value="$PROJECT_DIR$/WebServer/ThreadPool.cpp" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/Util.cpp" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/Util.h" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/EventLoopThreadPool.h" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/EventLoopThreadPool.cpp" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/EventLoopThread.h" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/EventLoopThread.cpp" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/EventLoop.h" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/EventLoop.cpp" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/Epoll.h" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/Epoll.cpp" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/Channel.h" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/Channel.cpp" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/tests/HTTPClient.cpp" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/HttpData.cpp" />
+        <option value="$PROJECT_DIR$/SimpleWebServer/HttpData.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="206" />
-    <option name="y" value="79" />
-    <option name="width" value="1302" />
-    <option name="height" value="981" />
+    <option name="x" value="356" />
+    <option name="y" value="171" />
+    <option name="width" value="938" />
+    <option name="height" value="860" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -299,7 +263,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -310,49 +273,19 @@
             <path>
               <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebServer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="old_version" type="462c0819:PsiDirectoryNode" />
+              <item name="SimpleWebServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebServer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="WebBench" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebServer-master" type="462c0819:PsiDirectoryNode" />
-              <item name="WebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="release" type="462c0819:PsiDirectoryNode" />
+              <item name="SimpleWebServer" type="462c0819:PsiDirectoryNode" />
+              <item name=".vscode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -446,7 +379,8 @@
       <workItem from="1552870277059" duration="287000" />
       <workItem from="1552870836192" duration="4076000" />
       <workItem from="1553144454656" duration="2316000" />
-      <workItem from="1553235305653" duration="706000" />
+      <workItem from="1553235305653" duration="1153000" />
+      <workItem from="1553410687549" duration="4350000" />
     </task>
     <task id="LOCAL-00001" summary="为何I/O复用和非阻塞I/O的简单调用情况">
       <created>1550843198636</created>
@@ -466,7 +400,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232677000" />
+    <option name="totallyTimeSpent" value="237474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -478,22 +412,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="206" y="79" width="1302" height="981" extended-state="0" />
+    <frame x="356" y="171" width="938" height="860" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20714286" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20870535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32939634" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31293303" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3637584" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.328084" />
-      <window_info anchor="bottom" id="CMake" order="10" weight="0.044619422" />
+      <window_info anchor="bottom" id="CMake" order="10" weight="0.044295304" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -519,7 +453,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/WebServer/EventLoop.h</url>
-          <line>67</line>
+          <line>66</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -531,11 +465,95 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/项目目的.md">
+    <entry file="file://$PROJECT_DIR$/WebServer/base/Thread.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/base/AsyncLogging.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/base/AsyncLogging.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/EventLoop.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/EventLoop.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/HttpData.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/HttpData.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/Main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#45#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/Server.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#58#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/Timer.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/Channel.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/Channel.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/Timer.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/Makefile.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/base/LogFile.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-326" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/base/Logging.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/tests/HTTPClient.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="102" column="30" lean-forward="true" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServer/ThreadPool.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="38" column="48" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/面试问题.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="247">
-            <caret line="13" column="5" selection-start-line="12" selection-start-column="2" selection-end-line="13" selection-end-column="7" />
+          <first_editor relative-caret-position="228">
+            <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -543,71 +561,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/Timer.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old_version/old_version_0.6/epoll.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-393" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/EventLoopThread.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/Server.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="e#58#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/Server.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
-          <folding>
-            <element signature="e#45#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datum/IO复用+非阻塞IO.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datum/idle.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datum/gdb.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datum/WebServer.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datum/WebServerk.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datum/muduok.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datum/muduo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datum/model.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试及改进.md">
+    <entry file="file://$PROJECT_DIR$/遇到的困难.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="912">
-            <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <first_editor relative-caret-position="-117">
+            <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/连接的维护.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="229">
+            <caret line="19" column="47" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="47" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/O操作的理解.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
@@ -626,11 +607,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/测试及改进.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="513">
-            <caret line="27" selection-start-line="27" selection-end-line="28" />
+          <first_editor relative-caret-position="293">
+            <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -638,141 +619,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/遇到的困难.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="304">
-            <caret line="16" selection-start-line="16" selection-end-line="16" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/连接的维护.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="361">
-            <caret line="19" column="47" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="47" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datum/close.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datum/cloc.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datum/ASLOG.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/面试问题.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="228">
-            <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/EventLoop.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/Util.h">
+    <entry file="file://$PROJECT_DIR$/WebServer/EventLoopThreadPool.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#58#76#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="19">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/Util.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/WebServer/Epoll.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89" />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/HttpData.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/HttpData.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/EventLoopThreadPool.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/EventLoopThread.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/Epoll.cpp">
+    <entry file="file://$PROJECT_DIR$/WebServer/config.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/WebServer/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/tests/HTTPClient.cpp">
+    <entry file="file://$PROJECT_DIR$/WebServer/ThreadPool.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1219" />
+        <state relative-caret-position="534">
+          <caret line="182" column="31" selection-start-line="182" selection-start-column="31" selection-end-line="182" selection-end-column="31" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datum/keepalive.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/WebServer/EventLoopThreadPool.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="23" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/CountDownLatch.cpp">
+    <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/CountDownLatch.h">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/CurrentThread.h">
+    <entry file="file://$PROJECT_DIR$/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/.vscode/settings.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/FileUtil.cpp">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/Makefile.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/Timer.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/FileUtil.h">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/Util.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/LogFile.cpp">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/Util.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/LogFile.h">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/EventLoopThreadPool.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/Logging.cpp">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/EventLoopThread.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/Logging.h">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/EventLoop.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/LogStream.cpp">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/EventLoop.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/LogStream.h">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/Epoll.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/MutexLock.h">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/Epoll.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/noncopyable.h">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/Channel.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/Thread.cpp">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/Channel.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/Thread.h">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/tests/HTTPClient.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/EventLoopThread.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/AsyncLogging.cpp">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/HttpData.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServer/base/AsyncLogging.h">
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/HttpData.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleWebServer/EventLoopThreadPool.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>

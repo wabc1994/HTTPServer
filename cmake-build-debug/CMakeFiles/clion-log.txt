@@ -1,5 +1,9 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/coderlau/IdeaProjects/WebServer-master
 -- CXX_FLAGS = -g -Wall -std=c++11 -D_PTHREADS -Wno-unused-parameter -O0
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug
+CMake Error at CMakeLists.txt:28 (add_subdirectory):
+  add_subdirectory given source "WebServer" which is not an existing
+  directory.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/coderlau/IdeaProjects/WebServer-master/cmake-build-debug/CMakeFiles/CMakeOutput.log".
