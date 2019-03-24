@@ -8,3 +8,14 @@ a simple web server  written in c++ , parse GET,POST,HEAD,HTTP request, asynchro
 - RAII small-point and MutexGuradlock
 - openssl + http for https
 - webbench test the server performance
+
+## Compile and run
+
+``` 
+mkdir build
+cd build
+cmake ..
+make
+cd ..
+
+```
